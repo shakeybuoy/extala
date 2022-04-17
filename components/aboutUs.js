@@ -15,7 +15,7 @@ function AboutUs() {
             <div className="text-xl mt-8 font-semibold italic capitalize">Extala solutions  is a cloud solution provider. We help organisations achieve more from technology through Microsoft Power Platform and Microsoft Dynamics 365.
             </div>
             <div className=" mt-4 capitalize">
-                By collecting existing and potential customer data, CRM tools can access customers' interaction histories and sales data. This enables CRM systems to identify the required services and products to improve sales processes. Overall, the software helps businesses understand their customers better.
+                By collecting existing and potential customer data, CRM tools can access customers&apos; interaction histories and sales data. This enables CRM systems to identify the required services and products to improve sales processes. Overall, the software helps businesses understand their customers better.
             </div>
         </motion.section>
     )
