@@ -17,18 +17,53 @@ body {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+.ocean {
+  height: 5%;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #016df8;
 }
-.background-lp {
-  background-color: #016df8;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23016DF8' stroke-width='57.9' stroke-opacity='0' %3E%3Ccircle fill='%23016DF8' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%231075f8' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%231e7df8' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232d86f8' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%233b8ef8' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%234a96f8' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23589ef8' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2367a6f8' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2375aef8' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2384b7f8' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2392bff8' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23a1c7f8' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23afcff8' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23bed7f8' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23ccdff8' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23dbe8f8' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23e9f0f8' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23F8F8F8' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover;
-  height: 100vh;
+
+.wave {
+  background: url(../public/images/waves.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }

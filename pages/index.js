@@ -17,26 +17,39 @@ export default function Home() {
 
       <LandingPage />
 
-
       <AboutUs />
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,64L48,106.7C96,149,192,235,288,250.7C384,267,480,213,576,197.3C672,181,768,203,864,224C960,245,1056,267,1152,277.3C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      <div className="text-xl bg-[#016df8] text-white py-10 font-bold px-3 text-center">Innovate faster with a low-code platform</div>
+
+      <div className="flex px-10 bg-[#016df8] justify-center w-screen">
+        <img src="../images/illustrationOne.svg" />
+      </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,165.3C672,160,768,96,864,101.3C960,107,1056,181,1152,213.3C1248,245,1344,235,1392,229.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
       <OurServices />
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
       <FillerOne />
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
       <HireUs />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,176C672,213,768,235,864,234.7C960,235,1056,213,1152,192C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      <div className="text-xl bg-[#016BFB] py-3 text-white font-bold px-3 text-center">
-        Extala Solutions delivers it&apos;s CRM solutions through Microsoft Dynamics 365.
+
+      <div className="flex justify-center w-screen">
+        <img className="" src="https://variablesoft.com/CrmContent/img/data-collection.jpg" />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,224L48,213.3C96,203,192,181,288,197.3C384,213,480,267,576,266.7C672,267,768,213,864,160C960,107,1056,53,1152,64C1248,75,1344,149,1392,186.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <CrmSection />
-      <section className="px-5 bg-[#016BFB] text-gray-50 py-10  w-screen  flex flex-col justify-center">
-        <div className="text-4xl text-center font-bold uppercase">Contact Us Now</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      <section className=" bg-[#016BFB] text-gray-50 py-5  w-screen  flex flex-col justify-center">
+        <div className="flex px-10 bg-[#016df8] justify-center ">
+          <img src="../images/illustrationTwo.svg" />
+        </div>
+        <div className="text-2xl text-center font-bold uppercase mt-10">Contact Us Now</div>
       </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
       <footer className="flex text-center flex-col py-5  justify-center text-md ">
 
         <div className="flex  justify-center space-x-10 py-10">

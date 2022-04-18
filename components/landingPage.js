@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function LandingPage() {
     return (
 
-        <section className=" z-20 background-lp mb-10 relative text-center flex flex-col justify-center">
+        <section className=" z-20 h-[100vh] bg-[#262b30] text-[#ffffff] relative text-center flex flex-col justify-center">
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: .8,
@@ -20,16 +20,15 @@ function LandingPage() {
                 },
             }}>
                 <div className="text-4xl font-bold">Extala Solutions</div>
-                <div className="text-xl my-8 italic px-4">Extend your possibilities of managing and analysing interactions </div>
+                <div className="text-xl py-10 italic px-4">Extend your possibilities of managing and analysing interactions </div>
                 <div className="flex justify-center">
-                    <motion.button className="bg-[#016df8]  flex justify-center items-center w-2/5 h-14 text-white rounded" whileHover={{ scale: 1.05 }}
+                    <motion.button className="bg-[#016df8]  flex justify-center items-center w-2/5 h-14 my-10 text-white rounded" whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.8 }}>Get Started <svg xmlns="http://www.w3.org/2000/svg" className="w-7 pl-2 fill-white" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" /></svg></motion.button>
 
                 </div>
             </motion.div>
 
-
-            <motion.div className="flex justify-center my-10 space-x-10 w-full" style={{ x: 300 }} animate={{ x: 0 }} transition={{ delay: 1, type: "spring", stiffness: 100 }}>
+            <motion.div className="flex justify-center z-20 mt-10 space-x-10 w-full" style={{ x: 300 }} animate={{ x: 0 }} transition={{ delay: 0, type: "spring", stiffness: 100 }}>
                 <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                     <svg className="h-10 w-10 fill-[#1877F2]" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
                 </motion.button>
@@ -42,7 +41,10 @@ function LandingPage() {
                     <svg className="h-10 w-10 fill-[#1DA1F2]" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
                 </motion.button>
             </motion.div>
-            <svg className="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fillOpacity="1" d="M0,64L60,69.3C120,75,240,85,360,122.7C480,160,600,224,720,218.7C840,213,960,139,1080,128C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div className="ocean opacity-100">
+                <div className="wave"></div>
+                <div className="wave"></div>
+            </div>
         </section>
     )
 }

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function FillerOne() {
     return (
-        <section className=" bg-[#016BFB] text-gray-50 py-10  w-full  flex flex-col justify-center">
+        <section className=" bg-[#016BFB] text-gray-50 w-full  flex flex-col justify-center">
             <motion.div initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
