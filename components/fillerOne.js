@@ -8,7 +8,7 @@ function FillerOne() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={{
-                    visible: { opacity: 1, x: 0, transition: { delay: 1, duration: 1 } },
+                    visible: { opacity: 1, x: 0, transition: { delay: 0.2, duration: 1 } },
                     hidden: { opacity: 0, x: 200 }
                 }} >
                 <div className="py-4 my-2 text-center self-center w-screen flex flex-col items-center">

@@ -7,9 +7,9 @@ function AboutUs() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={{
-                visible: { opacity: 1, x: 0, transition: { delay: 1, duration: 1 } },
+                visible: { opacity: 1, x: 0, transition: { delay: 0.2, duration: 1 } },
                 hidden: { opacity: 0, x: 200 }
-            }} className="px-5  h-[80vh] py-10 w-screen  flex flex-col justify-center">
+            }} id="section1" className="px-5  h-[80vh] py-10 w-screen  flex flex-col justify-center">
             <div className="text-xl text-[#016df8] font-bold uppercase">About Us</div>
             <div className="text-4xl font-bold capitalize">Who We Are ?</div>
             <div className="text-xl mt-8 font-semibold italic capitalize">Extala solutions  is a cloud solution provider. We help organisations achieve more from technology through Microsoft Power Platform and Microsoft Dynamics 365.

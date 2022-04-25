@@ -1,8 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
-
-
-function LandingPage() {
+import { Link, animateScroll as scroll } from "react-scroll";
+function HeroPage() {
     return (
 
         <section className=" z-20 h-[100vh] bg-[#262b30] text-[#ffffff] relative text-center flex flex-col justify-center">
@@ -22,9 +21,21 @@ function LandingPage() {
                 <div className="text-4xl font-bold">Extala Solutions</div>
                 <div className="text-xl py-10 italic px-4">Extend your possibilities of managing and analysing interactions </div>
                 <div className="flex justify-center">
-                    <motion.button className="bg-[#016df8]  flex justify-center items-center w-2/5 h-14 my-10 text-white rounded" whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.8 }}>Get Started <svg xmlns="http://www.w3.org/2000/svg" className="w-7 pl-2 fill-white" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" /></svg></motion.button>
 
+                    <motion.button whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.8 }}>
+                        <Link
+                            className="bg-[#016df8] flex justify-center items-center px-6 h-16 my-10 text-white rounded-lg"
+                            activeClass="active"
+                            to="section1"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={800}
+                        >Get Started <svg xmlns="http://www.w3.org/2000/svg" className="w-7 pl-2 fill-white" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" /></svg>
+                        </Link>
+
+                    </motion.button>
                 </div>
             </motion.div>
 
@@ -49,4 +60,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default HeroPage

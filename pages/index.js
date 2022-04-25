@@ -2,20 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
-import LandingPage from '../components/landingPage'
+import HeroPage from '../components/heroPage'
 import AboutUs from '../components/aboutUs'
 import OurServices from '../components/ourServices'
 import FillerOne from '../components/fillerOne'
 import HireUs from '../components/hireUs'
 import CrmSection from '../components/crmSection'
-
+import ContactUs from '../components/contactUs'
 export default function Home() {
 
   return (
     <div >
       <Navbar />
 
-      <LandingPage />
+      <HeroPage />
 
       <AboutUs />
 
@@ -41,14 +41,9 @@ export default function Home() {
         <img className="" src="https://variablesoft.com/CrmContent/img/data-collection.jpg" />
       </div>
       <CrmSection />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-      <section className=" bg-[#016BFB] text-gray-50 py-5  w-screen  flex flex-col justify-center">
-        <div className="flex px-10 bg-[#016df8] justify-center ">
-          <img src="../images/illustrationTwo.svg" />
-        </div>
-        <div className="text-2xl text-center font-bold uppercase mt-10">Contact Us Now</div>
-      </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#016df8" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#003886" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      <ContactUs />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#003886" fillOpacity="1" d="M0,192L80,170.7C160,149,320,107,480,101.3C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
 
       <footer className="flex text-center flex-col py-5  justify-center text-md ">
 

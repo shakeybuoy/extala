@@ -10,9 +10,9 @@ function Navbar() {
         disableScroll.on();
     }
     return (
-        <nav className="bg-[#262b30] fixed z-20 text-[#016df8] space-between font-semibold w-screen h-20 flex px-4 items-center ">
-            <Link href="/" className="">EXTALA</Link>
-            <div className="absolute right-8">
+        <nav className="bg-[#262b30] fixed z-20 text-[#016df8] justify-between font-semibold w-screen py-4 flex px-10 items-center ">
+            <Link href="/" ><img className="w-24 " src="/images/logo.png" /></Link>
+            <div className="">
                 <img src="https://img.icons8.com/material-rounded/30/016df8/menu--v1.png" onClick={() => setIsOpen(!isOpen)} />
             </div>
             {isOpen && (
