@@ -34,7 +34,7 @@ a {
 }
 
 .wave {
-  background: url(../public/images/waves.svg) repeat-x;
+  background: url(/images/waves.svg) repeat-x;
   position: absolute;
   top: -198px;
   width: 6400px;
